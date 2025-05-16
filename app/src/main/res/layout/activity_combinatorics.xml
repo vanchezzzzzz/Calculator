@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Число элементов (n):" />
+
+    <EditText
+        android:id="@+id/editTextN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Размер выборки (k):" />
+
+    <EditText
+        android:id="@+id/editTextK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCombinatorics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonArrangements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Размещения (Aₖⁿ)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCombinations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сочетания (Cₖⁿ)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPermutations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перестановки (Pₙ)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculateCombinatorics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать" />
+
+    <TextView
+        android:id="@+id/textViewResultCombinatorics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат:" />
+
+</LinearLayout>

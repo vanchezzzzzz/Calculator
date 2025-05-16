@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите данные (через запятую):" />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:hint="Например: 1.0, 2.5, 3.0, 1.5"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonCalculateStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать" />
+
+    <TextView
+        android:id="@+id/textViewMean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Среднее:" />
+
+    <TextView
+        android:id="@+id/textViewMedian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Медиана:" />
+
+    <TextView
+        android:id="@+id/textViewVariance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дисперсия:" />
+
+    <TextView
+        android:id="@+id/textViewStandardDeviation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Стандартное отклонение:" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChartStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+</LinearLayout>

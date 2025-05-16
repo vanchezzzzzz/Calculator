@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вероятность события A:" />
+
+    <EditText
+        android:id="@+id/editTextProbabilityA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вероятность события B:" />
+
+    <EditText
+        android:id="@+id/editTextProbabilityB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вероятность события P(A и B):" />
+
+    <EditText
+        android:id="@+id/editTextProbabilityAandB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonAnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A и B" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A или B" />
+
+        <RadioButton
+            android:id="@+id/radioButtonConditional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P(A|B) (условная)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат:" />
+
+</LinearLayout>
